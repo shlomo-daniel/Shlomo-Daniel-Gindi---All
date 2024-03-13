@@ -19,6 +19,7 @@
 nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: sticky;
   top: 0;
   background-color: #00FFDF;
@@ -30,7 +31,7 @@ nav {
 }
 nav .nav_pic_and_myName {
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 nav .nav_pic_and_myName .MyFace {
   width: 50px;
@@ -59,6 +60,7 @@ nav .nav_menuList li {
 nav .nav_menuList li a {
   color: #000;
   text-decoration: none;
+  transition: color 300ms;
 }
 nav .nav_menuList li a:hover {
   color: #0020FF;
@@ -76,9 +78,9 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: height 1s;
   min-height: 450px;
-  background: rgb(0, 159, 255);
-  background: linear-gradient(90deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 0%, rgb(0, 32, 255) 100%);
+  background: linear-gradient(326deg, rgba(0, 159, 255, 0.45) 0%, rgba(0, 255, 223, 0.45) 0%, rgba(0, 32, 255, 0.4) 100%);
 }
 .section_for_whyYoureHere h1 {
   font-family: "Inter-Tight", sans-serif;
@@ -174,7 +176,8 @@ nav a:hover {
   font-size: 0.9rem;
 }
 .section_projects .projects_cards .card-project .card_small_icons_technologies {
-  margin-bottom: 35px;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
 }
 .section_projects .projects_cards .card-project .card_small_icons_technologies img {
   width: 50px;
@@ -222,6 +225,7 @@ nav a:hover {
   font-family: "Gilda-Display", sans-serif;
   max-width: 600px;
   margin-bottom: 3.5em;
+  margin-inline: 0.5em;
 }
 .section-aboutMe a {
   text-decoration: none;
@@ -300,7 +304,7 @@ footer .section_contactMe form input[type=submit]:hover {
   color: white;
 }
 footer .contact-image img {
-  max-width: 500px;
+  max-width: 420px;
   width: 100%;
 }
 
@@ -412,7 +416,7 @@ footer .contact-image img {
     margin-bottom: 2em;
   }
   footer .contact-image img {
-    max-width: 300px;
+    max-width: 225px;
     width: 100%;
   }
   .section_icons_contactMe img {
@@ -440,5 +444,20 @@ footer .contact-image img {
   }
   .big-pic-ofProject {
     padding: 20px;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li:last-child {
+    margin-bottom: 0.5em;
+  }
+  nav ul li {
+    margin-top: 0.6em;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     position: sticky;
     top: 0;
@@ -18,7 +19,7 @@ nav {
 
     .nav_pic_and_myName {
         display: flex;
-        align-items: end;
+        align-items: center;
 
         .MyFace {
             width: 50px;
@@ -57,6 +58,7 @@ nav {
                 color: #000;
                 text-decoration: none;
 
+                transition: color 300ms;
             }
 
             a:hover {
@@ -84,10 +86,11 @@ nav {
     align-items: center;
     justify-content: center;
 
+    transition: height 1s;
+
     min-height: 450px;
 
-    background: rgb(0, 159, 255);
-    background: linear-gradient(90deg, rgba(0, 159, 255, 1) 0%, rgba(0, 255, 223, 1) 0%, rgba(0, 32, 255, 1) 100%);
+    background: linear-gradient(326deg, rgb(0 159 255 / 45%) 0%, rgb(0 255 223 / 45%) 0%, rgb(0 32 255 / 40%) 100%);
 
     h1 {
         font-family: $headers-font, sans-serif;
@@ -221,7 +224,8 @@ nav {
 
             .card_small_icons_technologies {
 
-                margin-bottom: 35px;
+                margin-bottom: 2.5em;
+                margin-top: 1em;
 
                 img {
                     width: 50px;
@@ -293,6 +297,7 @@ nav {
         max-width: 600px;
 
         margin-bottom: 3.5em;
+        margin-inline: 0.5em
     }
 
     a {
@@ -402,7 +407,7 @@ footer {
     .contact-image {
 
         img {
-            max-width: 500px;
+            max-width: 420px;
             width: 100%;
         }
     }
