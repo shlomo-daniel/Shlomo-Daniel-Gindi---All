@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+// limit the width to be more useable
+// body {
+//     max-width: 1600px;
+//     margin: 0 auto;
+// }
+
 // headers font
 @font-face {
     font-family: "Inter-Tight";

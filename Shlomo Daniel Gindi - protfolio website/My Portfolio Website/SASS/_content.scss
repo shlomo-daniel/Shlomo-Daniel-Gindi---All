@@ -125,13 +125,18 @@ nav {
         margin-inline: 1em;
     }
 
+    // OOP icon size
+    .tech_icons[src$="OOP.svg"] {
+        width: auto;
+    }
+
     .html-css-javascript-icons {
         width: auto;
         height: 50px;
     }
 }
 
-// projects area
+// projects area html css ---
 .section_projects {
     .heading_forProjects {
         display: flex;
@@ -256,6 +261,152 @@ nav {
         }
     }
 }
+
+// javascript projects section ---
+.section_projects_javascript {
+    background-color: rgba(255, 255, 183, 0.177);
+    margin-top: 2em;
+    padding-bottom: 2em;
+
+
+    .heading_forProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 200px;
+
+
+        h2 {
+            font-family: $headers-font, sans-serif;
+        }
+
+        p {
+            font-family: $all-text-font, sans-serif;
+        }
+    }
+
+    // cards styling
+    .projects_cards_javascript {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 25px;
+
+        .card-project-javascript {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background-color: #fff;
+
+            text-align: center;
+
+            max-width: 350px;
+            width: 100%;
+            min-height: 350px;
+
+            border-radius: 5px;
+
+            box-shadow: 2px 2px 6px 0px;
+
+            // global for cards
+            .cardImage {
+                width: 100%;
+                height: 150px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 5px 5px 5px;
+            }
+
+            // Alians Terminator first card
+            .cardImage.Alians-Terminator {
+                background-image: url(../images/javaScript_projects_images/Alain-Torminator.png);
+            }
+
+            // Countries API card
+            .cardImage.Countries-API {
+                background-image: url(../images/javaScript_projects_images/Countries-REST-API.png);
+            }
+
+            // Pokadex card
+            .cardImage.Pokadex {
+                background-image: url(../images/javaScript_projects_images/Pokedex-REST-API.png);
+            }
+
+            // Tasks Manager card
+            .cardImage.Tasks-Manager {
+                background-image: url(../images/javaScript_projects_images/Task-Manager.png);
+            }
+
+            //Tic Tac Toe
+            .cardImage.Tic-Tac-Toe {
+                background-image: url(../images/javaScript_projects_images/Tic-Tac-Toe.png);
+            }
+
+            // Web Page Builder
+            .cardImage.Web-Page-Builder {
+                background-image: url(../images/javaScript_projects_images/Web-Page-Builder.png);
+            }
+
+            h3 {
+                font-family: $headers-font, sans-serif;
+                font-size: 1.5rem;
+                margin-top: 0.5em;
+            }
+
+            p {
+                font-family: $all-text-font, sans-serif;
+                font-size: 0.9rem;
+            }
+
+            .card_small_icons_technologies-javascript {
+                display: flex;
+                align-items: center;
+                gap: 0.4em;
+                height: 30px;
+                margin-bottom: 2.5em;
+                margin-top: 1em;
+
+                // first group icon need differend size
+                img[src$="html-css-javascript-icons.png"] {
+                    width: 70px;
+                    margin-top: -4px;
+                }
+
+                // oop icon size
+                img[src$="OOP.svg"] {
+                    width: 60px;
+                }
+
+                img {
+                    width: 25px;
+                }
+
+
+            }
+
+            a {
+                text-decoration: none;
+
+                color: black;
+
+                border: 1px solid $light-color;
+                border-radius: 15px;
+                padding: 5px;
+                padding-inline: 50px;
+            }
+
+            a:hover {
+                background-color: $medium-color;
+                color: white;
+            }
+        }
+    }
+}
+
 
 // about me section
 .section-aboutMe {

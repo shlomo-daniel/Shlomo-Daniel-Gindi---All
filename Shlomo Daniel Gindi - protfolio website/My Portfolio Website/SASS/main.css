@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Inter-Tight";
   src: url(../fonts/Inter_Tight-headersFont/InterTight-VariableFont_wght.ttf);
@@ -107,6 +111,9 @@ nav a:hover {
   height: 40px;
   margin-inline: 1em;
 }
+.tech_icons_bar .tech_icons[src$="OOP.svg"] {
+  width: auto;
+}
 .tech_icons_bar .html-css-javascript-icons {
   width: auto;
   height: 50px;
@@ -195,6 +202,107 @@ nav a:hover {
   padding-inline: 50px;
 }
 .section_projects .projects_cards .card-project a:hover {
+  background-color: #009FFF;
+  color: white;
+}
+
+.section_projects_javascript {
+  background-color: rgba(255, 255, 183, 0.177);
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+.section_projects_javascript .heading_forProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+.section_projects_javascript .heading_forProjects h2 {
+  font-family: "Inter-Tight", sans-serif;
+}
+.section_projects_javascript .heading_forProjects p {
+  font-family: "Gilda-Display", sans-serif;
+}
+.section_projects_javascript .projects_cards_javascript {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  min-height: 350px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 0px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 5px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage.Alians-Terminator {
+  background-image: url(../images/javaScript_projects_images/Alain-Torminator.png);
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage.Countries-API {
+  background-image: url(../images/javaScript_projects_images/Countries-REST-API.png);
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage.Pokadex {
+  background-image: url(../images/javaScript_projects_images/Pokedex-REST-API.png);
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage.Tasks-Manager {
+  background-image: url(../images/javaScript_projects_images/Task-Manager.png);
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage.Tic-Tac-Toe {
+  background-image: url(../images/javaScript_projects_images/Tic-Tac-Toe.png);
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .cardImage.Web-Page-Builder {
+  background-image: url(../images/javaScript_projects_images/Web-Page-Builder.png);
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript h3 {
+  font-family: "Inter-Tight", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript p {
+  font-family: "Gilda-Display", sans-serif;
+  font-size: 0.9rem;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .card_small_icons_technologies-javascript {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  height: 30px;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .card_small_icons_technologies-javascript img[src$="html-css-javascript-icons.png"] {
+  width: 70px;
+  margin-top: -4px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .card_small_icons_technologies-javascript img[src$="OOP.svg"] {
+  width: 60px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript .card_small_icons_technologies-javascript img {
+  width: 25px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #00FFDF;
+  border-radius: 15px;
+  padding: 5px;
+  padding-inline: 50px;
+}
+.section_projects_javascript .projects_cards_javascript .card-project-javascript a:hover {
   background-color: #009FFF;
   color: white;
 }
